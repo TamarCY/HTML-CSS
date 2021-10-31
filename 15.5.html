@@ -4,36 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>15.1</title>
+    <title>15.5</title>
     <style>
-        .container{
+
+
+       
+        
+        .logo{
+            font-weight: bold ;
+            font-size: 1.5rem;
         }
+
+        .logo, .item{
+        width:100%;
+        height: 100px;
         
         
+        }
+
+        .navbar{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 30px ;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: lightpink;
+        border: solid;
+
+        }
+
+
+        
+
+        @media (min-width:600px) {
         .navbar{
             display: flex;
-            justify-content: end;
+            justify-content: flex-end;
             flex-direction: row;
         }
-        .navbar li{
-            list-style: none;
-            border:solid;
+
+        .logo{
+            margin-right: auto;
+            width: 150px;
         }
+
+        .item{
+            width: 100px;
+            height: 40px;
+            text-align: center;
+
+        }
+    }
+    
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="navbar">
         <div class="logo">APPLESEEDS</div>
-        <div class="navbar">
-            <ul>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>PROTFOLIO</li>
-                <li>CONTACT</li>
-            </ul>
-        </div>
-        
+        <div class="item">HOME</div>
+        <div class="item">ABOUT</div>
+        <div class="item">PROTFOLIO</div>
+        <div class="item">CONTACT</div>
     </div>
-   
 </body>
 </html>
