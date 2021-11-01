@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+
+        body{
+            background-color: black; 
+        } 
+
+        .conteiner{
+            height: 280px;
+            width: 302px;
+            position: relative;
+            margin-top:30vh;
+            margin-left:25vw;
+            
+            
+        }
+        .box1, .box2, .box3{
+            height: 90px;
+            width:500px;
+            position: relative;
+            color:white;
+            text-align: center;
+            
+
+        }
+        .box1::before{
+            content:'';
+            border: solid red 5px;
+            height: 30px;
+            width:30px;
+            border-bottom: none;
+            border-right: none;
+            position: absolute;
+            top:0px;
+            left:0px;
+        }
+        .box1::after{
+            content:'';
+            border: solid red 5px;
+            height: 30px;
+            width:30px;
+            border-left:none;
+            border-bottom: none;
+            position: absolute;
+            right:0px;
+            
+        }
+
+
+        .box3::before{
+            content:'';
+            border: solid red 5px;
+            height: 30px;
+            width:30px;
+            border-top: none;
+            border-right: none;
+            position: absolute;
+            bottom:0px;
+            left:0px;
+        }
+        .box3::after{
+            content:'';
+            border: solid red 5px;
+            height: 30px;
+            width:30px;
+            border-left:none;
+            border-top: none;
+            float:right;
+            position:absolute;
+            bottom:0px;
+            right:0px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="box1"></div>
+        <div class="box2"><h1>cool border</h1></div>
+        <div class="box3"></div>
+    </div>
+
+
+   
+</body>
+</html>

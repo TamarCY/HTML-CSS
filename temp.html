@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: black;
+        }
+        
+        h1{
+            font-size: 20px;
+            color:white;
+        }
+        .r{
+            height: 33%;
+            width:100%;
+            text-align:center;
+
+        }
+
+        .all-the-box{
+            position: relative;
+            height: 100px;
+            width:300px;
+            margin:20% auto;
+        }
+
+        
+      
+
+        .left-top{
+            border: solid red 2px;
+            height: 30px;
+            width:30px;
+            border-bottom: none;
+            border-right: none;
+            position: absolute;
+        }
+        .rt-top{
+            border: solid red 2px;
+            height: 30px;
+            width:30px;
+            border-left:none;
+            border-bottom: none;
+            position: absolute;
+            right: 0px;
+        }
+
+
+        .left-bott{
+            border: solid red 2px;
+            height: 30px;
+            width:30px;
+            border-top: none;
+            border-right: none;
+            float:left;
+            position: absolute;
+            bottom: 0px;
+        }
+        .rt-bott{
+            border: solid red 2px;
+            height: 30px;
+            width:30px;
+            border-left:none;
+            border-top: none;
+            float:right;
+            position:absolute;
+            bottom:0px;
+            right:0px;
+
+        }        
+    </style>
+</head>
+<body>
+    <div class="all-the-box">
+        <div class="top-rect r">
+            <div class="left-top red"></div>
+            <div class="rt-top red"></div>
+        </div>
+        <div class="middle-rect r">
+            <h1>cool border</h1>
+        </div>
+        <div class="bottom-rect r">
+            <div class="left-bott red"></div>
+            <div class="rt-bott red"></div>
+        </div>
+    </div>
+</body>
+</html>
