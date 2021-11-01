@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        a[data-tooltip]{
+            position: relative;
+        }
+        a[data-tooltip]:after{
+            content: attr(data-tooltip);
+            display: block;
+            position: absolute;
+            background-color: yellow;
+            border-radius: 10px;
+            padding: 4px;
+            font-size: 0.7em;
+            bottom: 100%;
+            left:0;
+            white-space: nowrap;
+            transform: scale(0);
+
+        }
+        
+        a[data-tooltip]:hover::after{
+            transform:scale(1);
+    }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempore, saepe dolore voluptas explicabo eaque culpa non excepturi, eveniet sequi praesentium recusandae sint tenetur doloremque et magni ut ex quisquam.
+            Magnam perferendis eligendi ipsa assumenda rem veritatis beatae similique aperiam, provident cumque, blanditiis, doloribus amet aliquid distinctio. Obcaecati nostrum sint mollitia velit ipsum! Sint temporibus, consequuntur iste accusamus pariatur dolore.
+            Id dolor dolore error, inventore repellendus perferendis veniam reprehenderit,<a href="#" data-tooltip="I am sed">sed</a>  ipsum officiis omnis velit deleniti! Necessitatibus in eius quisquam molestias, veniam accusamus nemo sequi eos reiciendis omnis voluptates sunt at libero.
+            Expedita ea, illo, numquam veniam voluptas ipsam eius aperiam nisi fugit eaque laboriosam molestias minus doloribus aut? Inventore incidunt fugiat nisi quisquam libero, facere tempore magnam et, tenetur possimus temporibus!
+            Natus deserunt porro, veniam dignissimos molestiae provident in minus architecto. Praesentium quas rerum delectus ratione tenetur, sunt, aperiam enim mollitia saepe quasi consequatur quo. Ipsam non pariatur officiis excepturi quod.
+            Accusamus suscipit eligendi consequatur non deserunt ducimus assumenda qui quod, provident veniam, fugiat impedit! Facere quidem ea aliquid explicabo accusamus, est nemo officiis quia culpa sint assumenda beatae quas sequi!
+            Quisquam, commodi. <a href="#" data-tooltip="I am Ipsum">Ipsum</a> praesentium rem quis<a href="#" data-tooltip="I am sed">sed</a>  consectetur placeat voluptas reprehenderit excepturi nobis illo! Dicta quaerat obcaecati sit ab? Qui in, ab commodi aspernatur quasi minima ex hic libero alias eligendi!
+            Incidunt, reiciendis delectus sed odio nihil vel quia est veritatis aliquid quidem minus, sint eius iste odit qui debitis esse earum illum minima pariatur? Saepe exercitationem totam necessitatibus praesentium pariatur.
+            At placeat velit illum necessitatibus? Ea animi optio voluptatibus, fugit natus vel doloremque, iusto soluta itaque, quisquam alias asperiores eius unde nostrum ratione numquam aliquam fuga suscipit quis magnam id.
+            Ex ab aliquam deserunt nihil ipsum tempora. Consequuntur molestias est ut illum provident amet doloremque beatae qui vel quas quasi, quibusdam at mollitia odit ab nemo, corporis voluptatum alias nam!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempore, saepe dolore voluptas explicabo eaque culpa non excepturi, eveniet sequi praesentium recusandae sint tenetur doloremque et magni ut ex quisquam.
+            Magnam perferendis eligendi ipsa assumenda rem veritatis beatae similique aperiam, provident cumque, blanditiis, doloribus amet aliquid distinctio. Obcaecati nostrum sint mollitia velit ipsum! Sint temporibus, consequuntur iste accusamus pariatur dolore.
+            Id <a href="#" data-tooltip="I am Ipsum">Ipsum</a>dolor dolore error, inventore repellendus perferendis veniam reprehenderit, ipsum officiis omnis velit deleniti! Necessitatibus in eius quisquam molestias, veniam accusamus nemo sequi eos reiciendis omnis voluptates sunt at libero.
+            Expedita ea, illo, numquam veniam voluptas ipsam eius aperiam nisi fugit eaque laboriosam molestias minus doloribus aut? Inventore incidunt fugiat nisi quisquam libero, facere tempore magnam et, tenetur possimus temporibus!
+            Natus deserunt porro, veniam dignissimos molestiae provident in minus architecto. Praesentium quas rerum delectus ratione tenetur, sunt, aperiam enim mollitia saepe quasi consequatur quo. Ipsam non pariatur officiis excepturi quod.
+            Accusamus suscipit eligendi consequatur <a href="#" data-tooltip="I am Ipsum">Ipsum</a>non deserunt ducimus assumenda qui quod, provident veniam, fugiat impedit! Facere quidem ea aliquid explicabo accusamus, est nemo officiis quia culpa sint assumenda beatae quas sequi!
+            Quisquam, commodi. Ipsum praesentium rem quis consectetur placeat voluptas reprehenderit excepturi nobis illo! <a href="#" data-tooltip="I am Dicta">Dicta</a>  quaerat obcaecati sit ab? Qui in, ab commodi aspernatur quasi minima ex hic libero alias eligendi!
+            Incidunt, reiciendis delectus<a href="#" data-tooltip="I am sed">sed</a>  odio nihil vel quia est veritatis aliquid quidem minus, sint eius iste odit qui debitis esse earum illum minima pariatur? Saepe exercitationem totam necessitatibus praesentium pariatur.
+            At placeat velit illum necessitatibus? Ea animi optio voluptatibus, fugit natus vel doloremque, iusto soluta itaque, quisquam alias asperiores eius unde nostrum ratione numquam aliquam fuga suscipit quis magnam id.
+            Ex ab aliquam deserunt nihil ipsum tempora. Consequuntur molestias est ut illum provident amet doloremque beatae qui vel quas quasi, quibusdam at mollitia odit ab nemo, corporis voluptatum alias nam!</p>
+        </div>
+</body>
+</html>
