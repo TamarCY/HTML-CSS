@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+       
+
+        body{
+            background-color: rgb(98, 98, 128);
+        }
+        h3{
+            text-align: center;
+            color:whitesmoke;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .round, .round-ghost, .flat, .flat-ghost{
+            margin: 25px auto;
+            text-align: center;
+        }
+        button{
+            margin:3px;
+            padding:3px;
+            color: #fffff0;
+            border:none;
+        }
+
+        .reg{
+            height: 40px;
+            width: 100px;
+            font-size: 15px;
+        }
+
+        .clr{
+            height: 30px;
+            width: 80px;
+            font-size: 13px;
+        }
+
+        .sub{
+            height: 20px;
+            width: 60px;
+            font-size: 10px;
+        }
+        .f-r, .fg-r:hover{
+            background-color: #008000;
+            
+        }
+
+        
+
+        .f-c, .fg-c:hover{
+            background-color: red;
+        }
+
+        .f-c:hover{
+            background-color: #DB0000;
+        }
+
+        .f-s, .fg-s:hover{
+            background-color: hsl(195, 67%, 80%);
+        
+        }
+
+        .f-s:hover{
+            background-color: hsl(195, 40%, 62%);
+
+        }
+
+        .f-r:hover{
+            background-color: #007600;
+        } 
+
+        .r, .rg{
+            border-radius: 20px;
+        }
+
+        .r-r{
+            background-color: orange;
+        }
+
+        .r-r:hover{
+            background-color: rgb(204, 146, 39);
+        }
+
+        .r-c{
+            background-color: yellow;
+        }
+
+        .r-c:hover{
+            background-color: rgb(182, 182, 20);
+        }
+        .r-s, .rg-s:hover{
+            background-color: grey;
+        }
+
+        .r-s:hover{
+            background-color: rgb(78, 77, 77);
+        }
+        
+
+        .fg, .rg{
+            background-color: transparent;
+        }
+
+        .fg-r{
+            border: green 2px solid;
+        }
+
+        .fg-c{
+            border: #ff0000 2px solid;
+        }
+
+        .fg-s{
+            border: lightblue 2px solid;
+        }
+
+
+        .rg-r{
+            border: orange 2px solid;
+        }
+        .rg-r:hover{
+            background-color: orange;
+        }
+
+        .rg-c{
+            border: yellow 2px solid;
+        }
+        .rg-c:hover{
+            background-color: yellow;
+        }
+
+        .rg-s{
+            border: gray 2px solid;
+            
+        }
+
+         .rg-s{
+            background-color: greenyellow;
+            transition: all 2s ease-in-out;
+
+        }
+
+        .rg-s:hover{
+            background-color :black;       
+        }
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="flat">
+        <h3>Flat</h3>
+        <div class="buttons">
+        <button class="f reg f-r">Register</button>
+        <button class="f clr f-c">Clear</button>
+        <button class="f sub f-s">Submit</button>
+        </div>
+    </div>
+    <div class="round">
+        <h3>Round</h3>
+        <button class="r reg r-r">Register</button>
+        <button class="r clr r-c">Clear</button>
+        <button class="r sub r-s">Submit</button>
+    </div>
+    <div class="flat-ghost">
+        <h3>Flat Ghost</h3>
+        <button class="fg reg fg-r">Register</button>
+        <button class="fg clr fg-c">Clear</button>
+        <button class="fg sub fg-s">Submit</button>
+    </div>
+    <div class="round-ghost">
+        <h3>Round Ghost</h3>
+        <button class="rg reg rg-r">Register</button>
+        <button class="rg clr rg-c">Clear</button>
+        <button class="rg sub rg-s">Submit</button>
+    </div>
+</body>
+</html>
